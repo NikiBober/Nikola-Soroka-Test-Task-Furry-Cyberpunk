@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
-  m_Name: 9_SkeletonData
+  m_Name: 8_Furry Cyberpunk_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: bfe358c7636f34bf9b68a18fdad1ada8, type: 2}
-  scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: 9f176a5a0e65a4784a3202399be7354f, type: 3}
+  - {fileID: 11400000, guid: 9c3ce5fd168a746abacde46874bac516, type: 2}
+  scale: 0.0015
+  skeletonJSON: {fileID: 4900000, guid: c96411e13ce1a444fba7019d201affa4, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
     requiresBlendModeMaterials: 0
@@ -28,4 +28,4 @@ MonoBehaviour:
   toAnimation: []
   duration: []
   defaultMix: 0.2
-  controller: {fileID: 0}
+  controller: {fileID: 9100000, guid: e95baafbb78b34009ae0eb85fa3a940c, type: 2}
