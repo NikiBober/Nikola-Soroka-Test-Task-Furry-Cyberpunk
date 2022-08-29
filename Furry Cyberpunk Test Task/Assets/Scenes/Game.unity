@@ -4809,7 +4809,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5295710070499234466, guid: b1e93b7b0b84e4b8b885944d765434f2, type: 3}
       propertyPath: level_to_load
-      value: Start
+      value: Final
       objectReference: {fileID: 0}
     - target: {fileID: 8648866338569527977, guid: b1e93b7b0b84e4b8b885944d765434f2, type: 3}
       propertyPath: m_Name
