@@ -138,7 +138,7 @@ public class LevelUI_Main : MonoBehaviour {
 		if(clickIcon.gameLevel.isUnlock)
         {
             GameController.assetGameLevel = clickIcon.gameLevel;
-            GUI_LoadingUI.instance.LoadLevel("Game");
+            GUI_LoadingUI.instance.LoadLevel("2_DialogueScene"); //here
         }
 	}
 	

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : Jun_ComponentSingletonObject<GameController> 
 {
@@ -58,6 +59,8 @@ public class GameController : Jun_ComponentSingletonObject<GameController>
 	Game_Camera gameCamera;
 	LatticeMatrix latticeGUIMatrix = new LatticeMatrix();
 	List<Game_ItemGUI> itemGUIs = new List<Game_ItemGUI>();
+
+	[SerializeField] VNEngine.ConversationManager endConversation;
 
 	void Awake ()
 	{
@@ -142,12 +145,13 @@ public class GameController : Jun_ComponentSingletonObject<GameController>
                 Gaming();
                 break;
 
-            case GameStatus.GameOver:
-                SetGameStatus(GameStatus.GameSettlement);
+            case GameStatus.GameOver: //here
+				endConversation.Start_Conversation();
+				SetGameStatus(GameStatus.GameSettlement);
                 break;
 
             case GameStatus.GameSettlement:
-                GameSettlement();
+                //GameSettlement();
                 break;
 		}
 
