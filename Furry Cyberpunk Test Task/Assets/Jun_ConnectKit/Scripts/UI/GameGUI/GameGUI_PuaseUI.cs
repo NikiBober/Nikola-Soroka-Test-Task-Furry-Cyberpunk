@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement; //
 
 public class GameGUI_PuaseUI : Jun_ComponentSingletonObject<GameGUI_PuaseUI> {
 
@@ -57,14 +58,16 @@ public class GameGUI_PuaseUI : Jun_ComponentSingletonObject<GameGUI_PuaseUI> {
 
 	void homeButton_OnClick (GameObject go)
 	{
-		GUI_LoadingUI.instance.LoadLevel ("Levels");
-		Hide ();
+		//GUI_LoadingUI.instance.LoadLevel ("Levels");
+		//Hide ();
+		Application.Quit();
 	}
 
 	void restartButton_OnClick (GameObject go)
 	{
-		GUI_LoadingUI.instance.LoadLevel ("Game");
-		Hide ();
+		//GUI_LoadingUI.instance.LoadLevel ("Game");
+		//Hide ();
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 
 	void musicButton_OnClick (GameObject go)

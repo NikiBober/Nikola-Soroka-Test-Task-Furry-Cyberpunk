@@ -60,7 +60,7 @@ public class GameController : Jun_ComponentSingletonObject<GameController>
 	LatticeMatrix latticeGUIMatrix = new LatticeMatrix();
 	List<Game_ItemGUI> itemGUIs = new List<Game_ItemGUI>();
 
-	[SerializeField] VNEngine.ConversationManager endConversation;
+	[SerializeField] VNEngine.ConversationManager whenDoneConversation;
 
 	void Awake ()
 	{
@@ -146,7 +146,7 @@ public class GameController : Jun_ComponentSingletonObject<GameController>
                 break;
 
             case GameStatus.GameOver: //here
-				endConversation.Start_Conversation();
+				whenDoneConversation.Start_Conversation();
 				SetGameStatus(GameStatus.GameSettlement);
                 break;
 
