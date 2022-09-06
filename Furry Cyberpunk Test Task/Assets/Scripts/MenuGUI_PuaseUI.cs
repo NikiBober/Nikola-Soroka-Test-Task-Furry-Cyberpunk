@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement; //
 
@@ -31,11 +29,6 @@ public class MenuGUI_PuaseUI : Jun_ComponentSingletonObject<MenuGUI_PuaseUI> {
 		ShowSoundButtonIcon ();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
 	public override void Show ()
 	{
 		base.Show ();
@@ -52,22 +45,17 @@ public class MenuGUI_PuaseUI : Jun_ComponentSingletonObject<MenuGUI_PuaseUI> {
 
 	void playButton_OnClick (GameObject go)
 	{
-		Hide ();
-		MenuGUI.instance.Show (); //
+		MenuGUIController.Instance.ResumeGame(); //
 	}
 
 	void homeButton_OnClick (GameObject go)
 	{
-		//GUI_LoadingUI.instance.LoadLevel ("Levels");
-		//Hide ();
-		Application.Quit();
+		Application.Quit(); //
 	}
 
 	void restartButton_OnClick (GameObject go)
 	{
-		//GUI_LoadingUI.instance.LoadLevel ("Game");
-		//Hide ();
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //
 	}
 
 	void musicButton_OnClick (GameObject go)

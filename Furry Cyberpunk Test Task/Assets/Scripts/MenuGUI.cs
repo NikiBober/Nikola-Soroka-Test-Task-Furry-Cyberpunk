@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class MenuGUI : Jun_ComponentSingletonObject <MenuGUI> {
 
@@ -14,7 +11,6 @@ public class MenuGUI : Jun_ComponentSingletonObject <MenuGUI> {
 
 	void pauseButton_OnClick (GameObject go)
 	{
-		MenuGUI_PuaseUI.instance.Show ();
-		Hide ();
+		MenuGUIController.Instance.PauseGame();
 	}
 }

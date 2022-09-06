@@ -2,15 +2,21 @@
 
 public class MenuGUIController : MonoBehaviour {
 
-	[SerializeField]
-	KeyCode pauseKey;
+	[SerializeField] KeyCode pauseKey;
+
+    public static MenuGUIController Instance;
 
     bool isPaused;
 
-	// Use this for initialization
-	void Start () 
+    void Awake()
+    {
+        Instance = this;
+    }
+
+    // Use this for initialization
+    void Start () 
 	{
-		MenuGUI_PuaseUI.instance.Hide ();
+        MenuGUI_PuaseUI.instance.Hide ();
 	}
 
 	void Update()
@@ -29,8 +35,6 @@ public class MenuGUIController : MonoBehaviour {
         {
             PauseGame();
         }
-
-        isPaused = !isPaused;
     }
 
 
@@ -39,6 +43,7 @@ public class MenuGUIController : MonoBehaviour {
     {
         MenuGUI_PuaseUI.instance.Show();
         MenuGUI.instance.Hide();
+        isPaused = true;
     }
 
     // Resume/Unpause
@@ -46,6 +51,7 @@ public class MenuGUIController : MonoBehaviour {
     {
         MenuGUI_PuaseUI.instance.Hide();
         MenuGUI.instance.Show();
+        isPaused = false;
     }
 
 
