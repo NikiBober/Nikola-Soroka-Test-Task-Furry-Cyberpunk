@@ -146,6 +146,7 @@ public class GameController : Jun_ComponentSingletonObject<GameController>
                 break;
 
             case GameStatus.GameOver: //here
+				AudionManger.inter.Play(gameAudioSetting.linkCompleteAudio, false, false, 0);
 				whenDoneConversation.Start_Conversation();
 				SetGameStatus(GameStatus.GameSettlement);
                 break;

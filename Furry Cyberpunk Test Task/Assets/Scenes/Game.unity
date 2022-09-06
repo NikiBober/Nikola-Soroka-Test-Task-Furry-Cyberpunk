@@ -1388,6 +1388,10 @@ PrefabInstance:
       propertyPath: whenDoneConversation
       value: 
       objectReference: {fileID: 2059353381}
+    - target: {fileID: 8792721727104935137, guid: 4618c56b3133540d1b7d908ad2e306eb, type: 3}
+      propertyPath: gameAudioSetting.linkCompleteAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 4096034754a6741b5b0f4952fdbaeab2, type: 3}
     - target: {fileID: 8792721727104935148, guid: 4618c56b3133540d1b7d908ad2e306eb, type: 3}
       propertyPath: m_Name
       value: Game Controller
@@ -1401,10 +1405,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8826632839593306287, guid: ed964d86661ce428885516a0a0313980, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8826632839795838251, guid: ed964d86661ce428885516a0a0313980, type: 3}
       propertyPath: m_Name
       value: Game Canvas
