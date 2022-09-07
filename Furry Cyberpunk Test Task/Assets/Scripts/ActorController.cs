@@ -5,24 +5,24 @@ using UnityEngine;
 public class ActorController : MonoBehaviour
 {
     #region Inspector
-    [SpineSkin] public string baseSkin;
-    [SpineSkin] public string emotionSkin;
-    [SpineSkin] public string dressSkin;
-    public bool isDressed;
+    [SerializeField] [SpineSkin] string baseSkin;
+    [SerializeField] [SpineSkin] string emotionSkin;
+    [SerializeField] [SpineSkin] string dressSkin;
+    [SerializeField] bool isDressed;
     #endregion
 
     #region private
-    private SkeletonGraphic skeletonGraphic;
-    private Skeleton skeleton;
-    private SkeletonData skeletonData;
+    SkeletonGraphic skeletonGraphic;
+    Skeleton skeleton;
+    SkeletonData skeletonData;
 
-    private Skin currentSkin;
-    private Skin baseLayer;
-    private Skin dressLayer;
-    private Skin emotionLayer;
+    Skin currentSkin;
+    Skin baseLayer;
+    Skin dressLayer;
+    Skin emotionLayer;
     #endregion
 
-    private void Awake()
+    void Awake()
     {
         //get references to components
         skeletonGraphic = GetComponent<SkeletonGraphic>();
@@ -30,7 +30,7 @@ public class ActorController : MonoBehaviour
         skeletonData = skeletonGraphic.SkeletonData;
     }
 
-    private void Start()
+    void Start()
     {
         //save skins that never changes
         baseLayer = skeletonData.FindSkin(baseSkin);

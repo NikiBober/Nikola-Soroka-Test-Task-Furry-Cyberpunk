@@ -2,19 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayMusic : MonoBehaviour
+namespace VNEngine
 {
-    public AudioClip musicClip;
-
-    // Start is called before the first frame update
-    void Start()
+    public class PlayMusic : Node
     {
-        AudionManger.inter.Play(musicClip, true, true);
-    }
+        [SerializeField] AudioClip musicClip;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public override void Run_Node()
+        {
+            if ( !(musicClip == null) )
+                AudionManger.inter.Play(musicClip, true, true);
+
+            Finish_Node();
+        }
+
+        public override void Finish_Node()
+        {
+            //StopAllCoroutines();
+
+            base.Finish_Node();
+        }
     }
 }

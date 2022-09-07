@@ -9,7 +9,7 @@ public class SaveController : MonoBehaviour
         Save();
     }
 
-    public void Save()
+    void Save()
     {
         int sceneIndex = SceneManager.GetActiveScene().buildIndex;
         PlayerPrefs.SetInt("LastPlayedSceneIndex", sceneIndex);
