@@ -1328,7 +1328,7 @@ MonoBehaviour:
   fetch_localized_stat_value: 0
   dialogue_from: 0
   localized_key: 
-  text: We looking for a best hacker in city. If you help us, u can fuck my sexy
+  text: We looking for a best hacker in city. If you help us, you can take my sexy
     girl ;)
   talking_beeps: {fileID: 0}
   darken_all_other_characters: 1
@@ -1414,6 +1414,14 @@ PrefabInstance:
     - target: {fileID: 7085392297829688807, guid: a7817d6d54b53495e83e3532c5046444, type: 3}
       propertyPath: m_Name
       value: Dialogue Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7085392297835246653, guid: a7817d6d54b53495e83e3532c5046444, type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7085392297835246653, guid: a7817d6d54b53495e83e3532c5046444, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 7085392297835257841, guid: a7817d6d54b53495e83e3532c5046444, type: 3}
       propertyPath: starting_conversation

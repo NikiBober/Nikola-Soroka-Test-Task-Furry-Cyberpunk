@@ -504,7 +504,7 @@ MonoBehaviour:
   fetch_localized_stat_value: 0
   dialogue_from: 0
   localized_key: 
-  text: Wow! You are really cool! Wanna see my twins in revard?
+  text: Wow! You are really cool! Wanna see my twins in reward?
   talking_beeps: {fileID: 0}
   darken_all_other_characters: 1
   bring_speaker_to_front: 1
@@ -1003,7 +1003,7 @@ MonoBehaviour:
   fetch_localized_stat_value: 0
   dialogue_from: 0
   localized_key: 
-  text: Roxy i waiting for you ;)
+  text: Roxy is waiting for you ;)
   talking_beeps: {fileID: 0}
   darken_all_other_characters: 1
   bring_speaker_to_front: 1
