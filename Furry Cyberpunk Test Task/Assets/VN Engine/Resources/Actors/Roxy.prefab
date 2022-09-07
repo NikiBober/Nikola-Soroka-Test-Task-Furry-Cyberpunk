@@ -838,7 +838,7 @@ GameObject:
   - component: {fileID: 6149025252778397222}
   - component: {fileID: 4520912205050879813}
   m_Layer: 0
-  m_Name: SkeletonGraphic (8_Furry Cyberpunk)
+  m_Name: Roxy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -953,6 +953,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseSkin: body
-  emotionSkin: emotions/neitral
+  emotionSkin: emotions/smile
   dressSkin: dress/dressed
   isDressed: 1

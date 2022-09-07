@@ -838,7 +838,7 @@ GameObject:
   - component: {fileID: 8596225511830406044}
   - component: {fileID: 5944365551509395732}
   m_Layer: 0
-  m_Name: SkeletonGraphic (9)
+  m_Name: Foxy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -963,7 +963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseSkin: body
-  emotionSkin: emotions/smile
+  emotionSkin: emotions/normal
   dressSkin: dress/dressed
   isDressed: 1
 --- !u!1 &6920599979010302406
